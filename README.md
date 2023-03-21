@@ -1,1 +1,1 @@
-# HTML
+# WSEI HTML laboratories source code
