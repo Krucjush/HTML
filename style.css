@@ -19,3 +19,13 @@ body{
     margin-bottom: 40px;
     text-align: center;
 }
+.menu{
+    text-align: center;
+    padding: 10px;
+}
+.menu a{
+    background-color: #333;
+    text-decoration: none;
+    color: burlywood;
+    padding: 5px 15px;
+}
