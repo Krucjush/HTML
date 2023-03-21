@@ -1,0 +1,76 @@
+.animation{
+    --parent: 800px;
+    --child: 100px;
+    --halfParent: calc((var(--parent) / 2) - (var(--child) / 2));
+    --endParent: calc(var(--parent)) - (var(--child));
+    margin: 30px auto;
+    width: var(--parent);
+}
+.animation .block{
+    width: var(--child);
+    height: var(--child);
+    /* position: relative; */
+    text-align: center;
+    line-height: var(--child);
+    animation: blockAnim2 4s linear infinite;
+}
+@keyframes blockAnim {
+    0%{
+        transform: scale(1);
+        background-color: #a00;
+    }
+    50%{
+        transform: scale(1.5);
+        border-radius: 30px;
+        background-color: #00a;
+    }
+    100%{
+        transform: scale(1);
+        background-color: #a00;
+    }
+}
+@keyframes blockAnim2 {
+    0%{
+        background-color: #a00; 
+        /* transform: rotate(0);  */
+        transform: translateX(0) rotate(0); 
+        border-radius: 0; 
+        /* left: 0; */
+    }
+    25%{
+        background-color: #0a0; 
+        /* transform: rotate(90deg);  */
+        transform: translateX(var(--halfParent)) rotate(90deg); 
+        border-radius: 25%; 
+        /* left: var(--halfParent); */
+    }
+    50%{
+        background-color: #00a; 
+        /* transform: rotate(180deg);  */
+        transform: translateX(var(--endParent)) rotate(180deg); 
+        border-radius: 50%; 
+        /* left: var(--endParent); */
+    }
+    75%{
+        background-color: #0a0; 
+        /* transform: rotate(90deg);  */
+        transform: translateX(var(--halfParent)) rotate(90deg); 
+        border-radius: 25%; 
+        /* left: var(--halfParent); */
+    }
+    100%{
+        background-color: #a00; 
+        transform: translateX(0) rotate(0); 
+        border-radius: 0; 
+        /* left: 0; */
+    }
+}
+@media (min-width: 260px) AND (max-width: 499px){
+    .animation{
+        --parent: 80vw;
+        --child: 10vw;
+    }
+    .animation .block{
+        animation: blockAnim 2s linear infinite
+    }
+}
