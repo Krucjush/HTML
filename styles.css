@@ -1,0 +1,48 @@
+body{
+    --zero: 0;
+    --sto: 100%;
+    --osiemset: 800px;
+}
+.container1, .container2{
+    background-color: cornflowerblue;
+    margin: 20px auto;
+    width: var(--osiemset);
+    height: var(--osiemset);
+}
+header, footer{
+    background-color: coral;
+    text-align: center;
+    padding: 1px;
+    width: var(--sto);
+    min-height: 150px;
+}
+section{
+    background-color: greenyellow;
+    padding: 1px;
+    width: var(--sto);
+    height: 500px;
+}
+article, figure{
+    width: 50%;
+    float: left;
+}
+article div{
+    margin: 10px;
+    text-align: justify;
+}
+figure{
+    margin: calc(16px / 2) var(--zero);
+}
+figure img{
+    width: var(--sto);
+}
+footer{
+    clear: both;
+}
+.container2{
+    background-image: url("./obraz.jpg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    background-attachment: fixed;
+}
