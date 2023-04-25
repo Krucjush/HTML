@@ -1,0 +1,42 @@
+.container {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1100px;
+    min-height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.block {
+    background-color: #2a8489;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: end;
+    background-image: url(https://codepip.com/wp-content/plugins/codepip/images/thumbnails/css-scoops.png);
+    background-repeat: no-repeat;
+    background-size: 57vw;
+    background-position: center bottom;
+    background-attachment: fixed;
+    columns: #444;
+}
+.btn {
+    background-color: bisque;
+    color: inherit;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    border: solid;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
