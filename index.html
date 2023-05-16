@@ -8,6 +8,61 @@
     <link rel="stylesheet" href="styles.css" class="styles">
 </head>
 <body>
-    
+    <form action="#" method="get">
+        <div class="form">
+            <label for="lgn">Login:</label>
+            <input type="text" name="" id="lgn" autofocus>
+        </div>
+        <div class="form">
+            <label for="pass">Hasło:</label>
+            <input type="password" name="" id="pass" required>
+        </div>
+        <div class="form">
+            <label for="eml">E-mail:</label>
+            <input type="email" name="" id="eml" placeholder="Podaj adres e-mail">
+        </div>
+        <div class="form">
+            <label for="date">Data:</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div class="form">
+            <label for="file">Załącz plik:</label>
+            <input type="file" name="" id="file">
+        </div>
+        <div class="form">
+            <label for="univ">Uczelnia:</label>
+            <select name="univ" id="univ">
+                <option value="wsei">WSEI</option>
+                <option value="other">Inna</option>
+                <option value="none">Nie dotyczy</option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="faculty">Kierunek:</label>
+            <select name="faculty" id="faculty" multiple size="3">
+                <option value="fir">Finanse</option>
+                <option value="is">Informatyka</option>
+                <option value="z">Zarządzanie</option>
+                <option value="other">Inne</option>
+                <option value="none">Nie Dotyczy</option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="">Płeć:</label>
+            <input type="radio" name="sex" id="sf"><label for="sf" class="lbl">K</label>
+            <input type="radio" name="sex" id="sm"><label for="sm" class="lbl">M</label>
+            <input type="radio" name="sex" id="sn"><label for="sn" class="lbl">Nie Podam</label>
+        </div>
+        <div class="form">
+            <label for="">Egz.ITS:</label>
+            <input type="checkbox" name="exam" id="cs"><label for="cs" class="lbl">C#</label>
+            <input type="checkbox" name="exam" id="db"><label for="db" class="lbl">Bazy</label>
+            <input type="checkbox" name="exam" id="html"><label for="html" class="lbl">HTML</label>
+        </div>
+        <div class="button">
+            <input type="reset" value="Wyczyść" class="btn">
+            <input type="submit" value="Zapisz i wyślij" class="btn">
+        </div>
+    </form>
 </body>
 </html>

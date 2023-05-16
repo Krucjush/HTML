@@ -1,0 +1,57 @@
+form{
+    --form: 400px;
+    background-color: #444;
+    color: bisque;
+    margin: 40px auto;
+    border: 2px solid #000;
+    border-radius: 10%;
+    padding: 10px;
+    width: var(--form);
+    min-height: var(--form);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.form{
+    margin: 10px;
+}
+form label{
+    display: inline-block;
+    width: 90px;
+}
+#lgn, #pass, #eml, #date, #file, #univ, #faculty{
+    width: 150px;
+}
+.form .lbl{
+    width: 40px;
+    font-weight: normal;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button .btn{
+    margin: 10px;
+    background-color: lightsteelblue;
+    color: #444;
+    width: 120px;
+}
+.button .btn:hover{
+    background-color: coral;
+    color: #000;
+    font-weight: 900;
+}
+/* --RWD-- */
+@media (min-width: 300px) AND (max-width: 499px) {
+    form{
+        --form: 80vw;
+        background-color: lightslategray;
+        color: #444;
+        border-radius: 30px;
+    }
+    form label{
+        display: block;
+    }
+    .form .lbl{
+        display: inline-block;
+    }
+}
